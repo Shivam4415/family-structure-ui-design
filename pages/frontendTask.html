@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+
+    <script src="/Users/shivamgupta/Desktop/MADLAB/madlab-frontend-design/global.js"></script>
+
+    <script src="/Users/shivamgupta/Desktop/MADLAB/madlab-frontend-design/js/familyStructureModal.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="/Users/shivamgupta/Desktop/MADLAB/madlab-frontend-design/custom.css"
+    />
+  </head>
+  <body>
+    <a
+      class="uk-button uk-button-default uk-button-danger uk-position-center"
+      id="modalButton"
+      >Open</a
+    >
+
+    <div id="modal-overflow" uk-modal>
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-modal-header">
+          <h2 class="uk-modal-title">What is your family structure like?</h2>
+        </div>
+
+        <div class="uk-modal-body" uk-overflow-auto>
+          <div class="sliderWithLabels padding-top" id="mySlider4"></div>
+          <div
+            class="uk-text-center uk-text-italic padding-bottom"
+            id="description"
+          >
+            I am single
+          </div>
+          <div class="uk-panel">
+            <ul id="familyStructureList" class="uk-list">
+              <li class="uk-flex uk-flex-around uk-width-1-1@l">
+                <label class="uk-text-middle padding-small-top uk-width-1-2"
+                  ><input class="uk-checkbox" type="checkbox" /><span
+                    class="uk-margin-small-left"
+                    >Couple</span
+                  ></label
+                >
+                <div class="uk-form-controls uk-width-1-2 visibility-hidden">
+                  <select
+                    value="2"
+                    class="uk-select"
+                    id="form-horizontal-select"
+                  >
+                    <option selected="selected">02</option>
+                    <option>04</option>
+                    <option>06</option>
+                  </select>
+                </div>
+              </li>
+              <li class="uk-flex uk-flex-around uk-width-1-1@l">
+                <label class="uk-text-middle padding-small-top uk-width-1-2"
+                  ><input class="uk-checkbox" type="checkbox" /><span
+                    class="uk-margin-small-left"
+                    >Parents</span
+                  ></label
+                >
+                <div class="uk-form-controls uk-width-1-2 visibility-hidden">
+                  <select class="uk-select" id="form-horizontal-select">
+                    <option value="1" selected="selected">01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                  </select>
+                </div>
+              </li>
+              <li class="uk-flex uk-flex-around uk-width-1-1@l">
+                <label class="uk-text-middle padding-small-top uk-width-1-2"
+                  ><input class="uk-checkbox" type="checkbox" /><span
+                    class="uk-margin-small-left"
+                    >Infants/Toddler</span
+                  ></label
+                >
+                <div class="uk-form-controls uk-width-1-2 visibility-hidden">
+                  <select class="uk-select" id="form-horizontal-select">
+                    <option value="1" selected="selected">01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                  </select>
+                </div>
+              </li>
+              <li class="uk-flex uk-flex-around uk-width-1-1@l">
+                <label class="uk-text-middle padding-small-top uk-width-1-2"
+                  ><input class="uk-checkbox" type="checkbox" /><span
+                    class="uk-margin-small-left"
+                    >Kids/Teens</span
+                  ></label
+                >
+                <div class="uk-form-controls uk-width-1-2 visibility-hidden">
+                  <select class="uk-select" id="form-horizontal-select">
+                    <option value="1" selected="selected">01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                  </select>
+                </div>
+              </li>
+              <li class="uk-flex uk-flex-around uk-width-1-1@l">
+                <label class="uk-text-middle padding-small-top uk-width-1-2"
+                  ><input class="uk-checkbox" type="checkbox" /><span
+                    class="uk-margin-small-left"
+                    >Young Adults</span
+                  ></label
+                >
+                <div class="uk-form-controls uk-width-1-2 visibility-hidden">
+                  <select class="uk-select" id="form-horizontal-select">
+                    <option value="1" selected="selected">01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="uk-modal-footer uk-text-right">
+          <button
+            class="uk-button uk-button-default uk-modal-close"
+            type="button"
+          >
+            Cancel
+          </button>
+          <button
+            id="saveFamilyStructure"
+            class="uk-button uk-button-primary"
+            type="button"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
