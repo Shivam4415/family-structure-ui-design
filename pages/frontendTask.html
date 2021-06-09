@@ -16,14 +16,11 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
 
-    <script src="/Users/shivamgupta/Desktop/MADLAB/madlab-frontend-design/global.js"></script>
+    <script src="../global.js"></script>
 
-    <script src="/Users/shivamgupta/Desktop/MADLAB/madlab-frontend-design/js/familyStructureModal.js"></script>
+    <script src="../js/familyStructureModal.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="/Users/shivamgupta/Desktop/MADLAB/madlab-frontend-design/custom.css"
-    />
+    <link rel="stylesheet" href="../custom.css" />
   </head>
   <body>
     <a
@@ -31,6 +28,12 @@
       id="modalButton"
       >Open</a
     >
+
+    <h2 class="uk-position-bottom-center">
+      Refresh the page after every Modal close. There is a bug i.e, need to
+      reset the modal and remove event listener everytime modal is saved or
+      closed.
+    </h2>
 
     <div id="modal-overflow" uk-modal>
       <div class="uk-modal-dialog">
